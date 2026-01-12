@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Back button styling */
+#back {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+#back a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#back a:hover {
+    transform: scale(1.1);
+}
+
+#back img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Header Styling */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #c8ffca;
+    color: rgb(0, 24, 7);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+/* Pinterest-Style Grid Layout */
+.pins-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Individual Card (Pin) Styling */
+.pin {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.pin:hover {
+    transform: translateY(-5px);
+}
+
+/* Image Styling */
+.pin-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Content Styling */
+.pin-content {
+    padding: 15px;
+}
+
+.pin-content h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.pin-content p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Category Tag */
+.pin-footer {
+    padding: 10px 15px;
+    background: #e0e0e0;
+    font-size: 0.8rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pins-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .pins-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* * footer styles */ 
+footer {
+    background-color: #131313;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    background-color: #292929;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+.footer-left p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-right a {
+    color: #bdffcd;
+    text-decoration: none;
+}
+
+.footer-faq {
+    background-color: #292929;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-faq details {
+    color: rgb(228, 226, 226);
+    cursor: pointer;
+}
+
+.footer-faq summary {
+    font-weight: bold;
+    font-size: 16px;
+}

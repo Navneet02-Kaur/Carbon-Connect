@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "K2D", serif;
+}
+
+html {
+  /* font-family: 'Inter', sans-serif; */
+  background-color: rgb(249, 250, 251);
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f7f0;
+  }
+  
+ 
+body {
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+/* Back button */
+#back {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+
+#back a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#back a:hover {
+    transform: scale(1.1);
+}
+
+#back img {
+    width: 24px;
+    height: 24px;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.form-container {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(46, 125, 50, 0.1);
+    animation: fadeIn 0.5s ease-out;
+}
+
+.text-center {
+    text-align: center;
+    color: #1a472a;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.cb {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.75rem;
+    color: #2e7d32;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.form-control, .form-select {
+    width: 100%;
+    padding: 0.875rem 1.25rem;
+    font-size: 1rem;
+    color: #1a472a;
+    background-color: #fcfefb;
+    border: 1.5px solid #90c290;
+    border-radius: 0.75rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-control:focus, .form-select:focus {
+    outline: none;
+    border-color: #2e7d32;
+    box-shadow: 0 0 0 4px rgba(46, 125, 50, 0.1);
+    background-color: white;
+}
+
+.form-control::placeholder {
+    color: #90c290;
+}
+
+.form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%232e7d32' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.75rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.75rem;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 2rem 0;
+}
+
+.form-check-input {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 1.5px solid #90c290;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background-color: #2e7d32;
+    border-color: #2e7d32;
+}
+
+.form-check-label {
+    color: #2e7d32;
+    font-size: 0.95rem;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: white;
+    background-color: #2e7d32;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+    background-color: #1b5e20;
+    transform: translateY(-1px);
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(46, 125, 50, 0.25);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
